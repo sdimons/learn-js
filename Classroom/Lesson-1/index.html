@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lesson 1</title>
+    <title>Title</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+         console.log('DOM fully loaded amd parsed', document.querySelector('div').offsetWidth)
+        })
+        window.addEventListener('load', ()=>{
+            console.log('DOM Loaded',  document.querySelector('div').offsetWidth)
+        })
+    </script>
+    <script src="index.js" ></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div>Js</div>
+<img src="http://web.archive.org/web/20150211040638im_/http://ie.microsoft.com/testdrive/HTML5/DOMContentLoaded/window.jpg">
+<img src="http://web.archive.org/web/20150405114023im_/http://ie.microsoft.com/testdrive/HTML5/DOMContentLoaded/window.jpg">
+<img src="http://web.archive.org/web/20150405114023im_/http://ie.microsoft.com/testdrive/HTML5/DOMContentLoaded/whidbey2.jpg">
 </body>
 </html>
