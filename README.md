@@ -5,14 +5,14 @@ Github классных уроков:
 https://github.com/NepipenkoIgor/js250919
 
 ## Доп. чтение и задачи
-25.09.19
+25.09.19  
 https://learn.javascript.ru/getting-started  
 https://learn.javascript.ru/first-steps  
   
-28.09.19
+28.09.19  
 https://learn.javascript.ru/data-types 5.1 - 5.3;  
   
-02.10.19
+02.10.19  
 https://learn.javascript.ru/object  
 https://learn.javascript.ru/object-properties  
 https://learn.javascript.ru/iterable  
@@ -24,7 +24,7 @@ https://learn.javascript.ru/prototype
 http://plnkr.co/edit/dGUVyp9F7K4D5TnCG0N1?p=catalogue  
 http://plnkr.co/edit/y563vOmBUWvWljtta5AB?p=info  
 
-05.10.19
+05.10.19  
 https://learn.javascript.ru/destructuring  
 https://learn.javascript.ru/set-map  
 https://learn.javascript.ru/document  
@@ -38,7 +38,7 @@ function fn (s){
 fn(str) // '3a2b2c2d1a'
 ```
 
-09.10.19
+09.10.19  
 https://learn.javascript.ru/document  
 https://learn.javascript.ru/task/set-class-links  
 https://learn.javascript.ru/task/create-object-tree  
