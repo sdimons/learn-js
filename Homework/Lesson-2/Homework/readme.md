@@ -1,29 +1,8 @@
 # Для запуска проекта запустите index.html
+Кнопки открывают описанию темы.
+Ссылки открывают условия задач.
 
-## Объекты
-https://learn.javascript.ru/string#tasks
-
-## Свойства объекта, их конфигурация
-https://learn.javascript.ru/object-properties
-
-## Перебираемые объекты
-https://learn.javascript.ru/iterable
-
-## Массивы
-https://learn.javascript.ru/array
-
-## Методы массивов
-https://learn.javascript.ru/array-methods
-
-## Массив: перебирающие методы
-https://learn.javascript.ru/array-iteration
-
-## Дата и Время
-https://learn.javascript.ru/datetime
-
-## Прототип объекта
-https://learn.javascript.ru/prototype
-
+### Долнительные задачи
 ## deepEqual(a, b)
 ```javascript
 // Code goes here
