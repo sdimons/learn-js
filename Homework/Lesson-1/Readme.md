@@ -1,3 +1,5 @@
+# Для запуска проекта запустите index.html
+
 ## Методы у примитивов
 https://learn.javascript.ru/primitives-methods#tasks
 

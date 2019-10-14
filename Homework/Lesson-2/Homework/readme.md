@@ -1,3 +1,5 @@
+# Для запуска проекта запустите index.html
+
 ## Объекты
 https://learn.javascript.ru/string#tasks
 
@@ -22,7 +24,7 @@ https://learn.javascript.ru/datetime
 ## Прототип объекта
 https://learn.javascript.ru/prototype
 
-## deepEqual
+## deepEqual(a, b)
 ```javascript
 // Code goes here
 'use strict';
@@ -44,7 +46,7 @@ function deepEqual(a, b) {
 }
 deepEqual(a, b);
 ```
-## styleToObject
+## styleToObject(str)
 ```javascript
 // Code goes here
 let style = `
