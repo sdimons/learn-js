@@ -46,6 +46,15 @@ https://learn.javascript.ru/task/calendar-table
 https://learn.javascript.ru/task/put-ball-in-center  
 https://next.plnkr.co/edit/9OLNtgmui1dLNigO?preview  
 
+12.10.19
+- Проработать модуль 1
+- https://learn.javascript.ru/events  
+- https://learn.javascript.ru/task/carousel  
+- https://learn.javascript.ru/task/sliding-tree  
+- https://learn.javascript.ru/task/behavior-tooltip  
+- https://learn.javascript.ru/task/image-gallery  
+- TODO clear all , select all http://todomvc.com/examples/vanillajs/#/  
+
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
 - babel.io транспайлер https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DYUwLgBAhg5iEF4ICZkG4BQHSQGYDtEIAKASgQD4BvAXywG0BdAOgEt8BjYAVwBMQAzmQhA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.6.2&externalPlugins=  
