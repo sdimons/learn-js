@@ -62,12 +62,17 @@ function getMaxSubSum(arr) {
     debugger;
     let maxSum = Math.min(...arr);
     
-    for(let i = 0; i < arr.length - 1; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let currentSum = arr[i];
         let currentArr = [arr[i]];
-        for(let j = i + 1; j < arr.length; j++) {
-            currentSum += arr[j];
-            currentArr.push(arr[j]);
+        for (let j = i + 1; j < arr.length; j++) {
+            if (currentSum + arr[j] > currentSum) {
+                currentSum += arr[j];
+                currentArr.push(arr[j]);
+            }
+            else {
+                break;
+            }
         }
         if (currentSum > maxSum) {
             maxSum = currentSum;
@@ -77,6 +82,7 @@ function getMaxSubSum(arr) {
     return { maxArr, maxSum};
 }
 document.getElementById("btnArray5").addEventListener('click', function () {
+    let input = null;
     do {
         input = prompt("Введите числа через запятую (для массива)");
         let numbers = input.split(',');
