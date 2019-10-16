@@ -171,3 +171,126 @@ document.getElementById("btnArrayMethod6").addEventListener('click', function ()
     }
     while(input != null);
 });
+
+//7. Трансформировать в массив имён
+document.getElementById("btnArrayMethod7").addEventListener('click', function () {
+    let vasya = { name: "Вася", age: 25 };
+    let petya = { name: "Петя", age: 30 };
+    let masha = { name: "Маша", age: 28 };
+
+    let users = [ vasya, petya, masha ];
+    let names = users.map(item => item.name);
+    alert(`[ vasya, petya, masha ] -> ${names}`);
+});
+
+//8. Трансформировать в объекты
+document.getElementById("btnArrayMethod8").addEventListener('click', function () {
+    let vasya = {
+        name: "Вася",
+        surname: "Пупкин",
+        id: 1
+    };
+    let petya = {
+        name: "Петя",
+        surname: "Иванов",
+        id: 2
+    };
+    let masha = {
+        name: "Маша",
+        surname: "Петрова",
+        id: 3
+    };
+
+    let users = [vasya, petya, masha];
+
+    let usersMapped = users.map(item => { return { id: item.id, fullName: `${item.name} ${item.surname}`}} );
+
+    alert(usersMapped[0].id) // 1
+    alert(usersMapped[0].fullName) // Вася Пупкин
+    console.log(users);
+    console.log(usersMapped);
+});
+
+//9. Отсортировать пользователей по возрасту
+function sortByAge(users) {
+    users.sort((a, b) => {
+        if (a.age > b.age) return 1; // если первое значение больше второго
+        if (a.age == b.age) return 0; // если равны
+        if (a.age < b.age) return -1; // если первое значение меньше второго
+    });
+}
+document.getElementById("btnArrayMethod9").addEventListener('click', function () {
+    let vasya = { name: "Вася", age: 25 };
+    let petya = { name: "Петя", age: 30 };
+    let masha = { name: "Маша", age: 28 };
+
+    let arr = [ vasya, petya, masha ];
+
+    sortByAge(arr);
+
+    // теперь: [vasya, masha, petya]
+    alert(arr[0].name); // Вася
+    alert(arr[1].name); // Маша
+    alert(arr[2].name); // Петя
+});
+
+//10. Перемешайте массив
+function shuffle(array) {
+    return array.sort((a, b) => {
+        //return Math.random() * (max - min) + min
+        return Math.random() * (1 - (-1)) + (-1);
+    });
+}
+document.getElementById("btnArrayMethod10").addEventListener('click', function () {
+    let input = null;
+    do {
+        input = prompt("Введите массив чисел через запятую (для массива)");
+        if (input != null) {
+            const arr = GetNumberArray(input);
+            alert(`Перемешанный массив: ${shuffle(arr)}`);
+        }
+    }
+    while(input != null);
+});
+
+//11. Получить средний возраст
+function getAverageAge(users) {
+    /*
+    let value = arr.reduce(function(previousValue, item, index, array) {
+        // ...
+    }, [initial]);
+    */
+    if (users != null && users.length > 0)
+    {
+        let result = users.reduce((sum, current) => sum + current, 0);
+        return result / users.length;
+    }
+    return "Пустой массив";
+}
+document.getElementById("btnArrayMethod11").addEventListener('click', function () {
+    let input = null;
+    do {
+        input = prompt("Введите массив чисел через запятую (для массива)");
+        if (input != null) {
+            const ages = GetNumberArray(input);
+            alert(`Средний возраст: ${getAverageAge(ages)}`);
+        }
+    }
+    while(input != null);
+});
+
+//12. Оставить уникальные элементы массива
+function unique(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!result.includes(arr[i])) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+document.getElementById("btnArrayMethod12").addEventListener('click', function () {
+    let strings = ["кришна", "кришна", "харе", "харе",
+    "харе", "харе", "кришна", "кришна", ":-O"];
+    alert(unique(strings));
+});

@@ -23,5 +23,20 @@ let style = `
 `;
 
 function styleToObject(str) {
-  return {};
+  let rows = str.split(';');
+  let styleObject = {};
+  for (let i = 0; i < rows.length; i++) {
+    let values = rows[i].split(':');
+    if (values.length == 2) {
+      if (!(values[0].trim() in styleObject)) {
+        styleObject[values[0].trim()] = values[1].trim();
+      }
+    }
+  }
+  return styleObject;
 }
+
+document.getElementById("btnStyleToObject").addEventListener('click', function () {
+  alert('Подробности в консоли');
+  console.log(styleToObject(style));
+});
