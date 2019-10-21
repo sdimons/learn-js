@@ -10,7 +10,8 @@ function unique(arr) {
     }
     return result;
 }
-document.getElementById("btnMapSet1").addEventListener('click', function () {
+let el = document.getElementById("btnMapSet1");
+el.addEventListener('click', function () {
   let values = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
   ];
@@ -34,7 +35,8 @@ function aclean(arr) {
       }
     return result;
 }
-document.getElementById("btnMapSet2").addEventListener('click', function () {
+el = document.getElementById("btnMapSet2");
+el.addEventListener('click', function () {
     let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
     alert( `arr: ${arr}\n` +
@@ -42,7 +44,8 @@ document.getElementById("btnMapSet2").addEventListener('click', function () {
 });
 
 //3. Перебираемые ключи
-document.getElementById("btnMapSet3").addEventListener('click', function () {
+el = document.getElementById("btnMapSet3");
+el.addEventListener('click', function () {
     let map = new Map();
 
     map.set("name", "John");

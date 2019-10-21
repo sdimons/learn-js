@@ -1,3 +1,4 @@
+// 'aaabbccdda' => '3a2b2c2d1a'
 function transfirmString(str) {
     let arr = str.split('');
     return arr.reduce((newStr,letter) => {
@@ -12,7 +13,9 @@ function transfirmString(str) {
         return newStr;
     }, []).map((item) => item.length + item[0]).join('');
 }
-document.getElementById("btnSymbolsNumber").addEventListener('click', function () {
+
+let el = document.getElementById("btnSymbolsNumber");
+el.addEventListener('click', function () {
     let input = null;
     do{
         input = prompt("Введите тестовую строку");

@@ -1,5 +1,6 @@
 //1. Деструктурирующее присваивание
-document.getElementById("btnDestructuring1").addEventListener('click', function () {
+let el = document.getElementById("btnDestructuring1");
+el.addEventListener('click', function () {
     let user = {
         name: "John",
         years: 30
@@ -29,7 +30,8 @@ function topSalary(salaries) {
     }
     return null;
 }
-document.getElementById("btnDestructuring2").addEventListener('click', function () {
+el = document.getElementById("btnDestructuring2");
+el.addEventListener('click', function () {
     let salaries = {
         "John": 100,
         "Pete": 300,
