@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+  <form name="search">
+    <label>Search the site:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Search!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Search the visitors:
+    <table id="age-table">
+      <tr>
+        <td>Age:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">less than 18</label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50</label>
+          <label>
+            <input type="radio" name="age" value="senior">more than 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Additionally:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+
+    </table>
+
+    <input type="submit" value="Search!">
+  </form>
+  <script>
+      let elTable = document.getElementById('age-table');
+      let elLabels = elTable.getElementsByTagName('label');
+      let elFirstTd = elLabels[0];
+      let elForm = document.getElementsByName('search')[0];
+      let elFirstInput = elForm.querySelector('input');
+      let elInputs = elForm.querySelectorAll('input');
+      let elLastInput = elInputs[elInputs.length - 1];
+      alert('Скрипт в html\n'+
+      `Некоторые результаты:\n${elFirstTd.outerHTML}\n${elFirstInput.outerHTML}\n${elLastInput.outerHTML}`);
+  </script>
+</body>
+</html>
