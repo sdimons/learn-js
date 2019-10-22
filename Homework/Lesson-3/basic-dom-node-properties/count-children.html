@@ -40,7 +40,15 @@
   </ul>
 
   <script>
-   
+    let result = [];
+    let elLis = document.querySelectorAll('li');
+    for(let elLi of elLis) {
+      let elFirst = elLi.firstChild;
+      if (elFirst != null && elFirst.nodeType === 3) {
+        result.push(elFirst.data.trim());
+      }
+    }
+    alert(result);
   </script>
 
 </body>

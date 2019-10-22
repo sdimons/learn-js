@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <script>
+            alert(`Тип document: ${document.constructor.name}\n`+
+            `Родитель document: ${(document.parentNode && document.parentNode.name)}\n`+
+            `Наследует ли он от Node: ${document instanceof Node}\n` +
+            `Наследует ли он от Element: ${document instanceof Element}\n`+
+            `Наследует ли он от HTMLElement: ${document instanceof HTMLElement}`);
+        </script>
+    </body>
+</html>
