@@ -55,6 +55,14 @@ https://next.plnkr.co/edit/9OLNtgmui1dLNigO?preview
 - https://learn.javascript.ru/task/image-gallery  
 - TODO clear all , select all http://todomvc.com/examples/vanillajs/#/  
 
+23.10.19
+- https://learn.javascript.ru/closures  
+- https://learn.javascript.ru/task/closure-sum  
+- https://learn.javascript.ru/task/stringbuffer  
+- https://learn.javascript.ru/task/stringbuffer-with-clear  
+- https://learn.javascript.ru/task/make-army  
+
+
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
 - babel.io транспайлер https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DYUwLgBAhg5iEF4ICZkG4BQHSQGYDtEIAKASgQD4BvAXywG0BdAOgEt8BjYAVwBMQAzmQhA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.6.2&externalPlugins=  
