@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Test</title>
+</head>
+
+<body>
+    <table id="table">
+        aaa
+        <tr>
+            <td>Тест</td>
+        </tr>
+    </table>
+
+    <script>
+        let code = document.createElement('code');
+        let bodyText = document.body.innerHTML;
+        code.innerText =  bodyText;
+        table.remove();
+        document.body.append(code);
+        alert('aaa вынесен за пределы таблицы')
+    </script>
+</body>
+
+</html>

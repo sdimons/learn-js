@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let elem = document.createElement('div');
+        let text = '<strong>Hello!</strong>';
+
+        elem.append(document.createTextNode(text));
+        alert(`append():\n${elem.innerHTML}`);
+        elem.innerHTML = text;
+        alert(`innerHTML:\n${elem.innerHTML}`);
+        elem.innerText = text;
+        alert(`innerText:\n${elem.innerHTML}`);
+    </script>
+</body>
+</html>
