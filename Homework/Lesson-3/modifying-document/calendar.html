@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Календарь</title>
+</head>
+<body>
+    <script>
+        let daysOfWeek = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+        let month = Number(prompt('Введите месяц...'));
+        let year = Number(prompt('Введите год...'));
+        if (!isNaN(month) && !isNaN(year)) {
+            let start = new Date(year, month - 1, 1);
+            let end = new Date(year, month , 1);
+            let table = document.createElement('table');
+            table.border = '1';
+            let tr = document.createElement('tr');
+            tr.style = 'background-color: #D3D3D3;';
+            for (let day of  daysOfWeek) {
+                let th = document.createElement('th');
+                th.append(document.createTextNode(day));
+                tr.append(th);
+            }
+            table.append(tr);
+            while(start < end) {
+                let tr = document.createElement('tr');
+                for (let day = 0; day < 7; day++){
+                    let td = document.createElement('td');
+                    let currentDay = start.getDay() - 1;
+                    if (currentDay < 0) {
+                        currentDay = 6; //переносим воскресение в конец
+                    }
+                    if (day === currentDay && start < end){
+                        td.append(document.createTextNode(start.getDate()));
+                        tr.append(td);
+                    }
+                    else
+                    {
+                        td.append(document.createTextNode(''));
+                        tr.append(td);
+                        continue;
+                    }
+                    start.setDate(start.getDate() + 1);
+                }
+                table.append(tr);
+            }
+            document.body.append(table);
+        }
+        else {
+            alert('Некорректные введенные данные');
+        }
+    </script>
+</body>
+</html>

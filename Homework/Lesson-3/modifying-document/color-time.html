@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Цветные часы</title>
+    <style>
+        .hour {
+            color:red;
+        }
+        .minutes {
+            color: green;
+        }
+        .seconds {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id='clock'>
+        <span class='hour'>00</span>
+        :
+        <span class='munutes'>00</span>
+        :
+        <span class='seconds'>00</span>
+    </div>
+    <!-- клик по этой кнопке вызовет clockStart() -->
+    <input type="button" onclick="clockStart()" value="Старт">
+
+    <!-- клик по этой кнопке вызовет clockStop() -->
+    <input type="button" onclick="clockStop()" value="Стоп">
+    <script>
+        let timerId;
+        function clockStart() {
+            timerId = setInterval(() => 
+            {
+                let div = document.body.firstElementChild;
+                div.replaceWith(showTime(new Date()));
+            }, 1000);
+        }
+        
+        function clockStop() {
+            clearInterval(timerId);
+            timerId = null;
+        }
+
+        function showTime(currentTime) {
+            let div = document.createElement('div');
+            div.id = 'clock';
+            let hour = document.createElement('span');
+            hour.className = 'hour';
+            let currentHours = currentTime.getHours();
+            hour.append(document.createTextNode(currentHours > 9 ? currentHours : '0' + currentHours));
+            let minutes = document.createElement('span');
+            minutes.className = 'minutes';
+            let currentMinutes = currentTime.getMinutes();
+            minutes.append(document.createTextNode(currentMinutes > 9 ? currentMinutes : '0' + currentMinutes));
+            let seconds = document.createElement('span');
+            seconds.className = 'seconds';
+            let currentSeconds = currentTime.getSeconds();
+            seconds.append(document.createTextNode(currentSeconds > 9 ? currentSeconds : '0' + currentSeconds));
+            div.append(hour, document.createTextNode(':'), minutes, document.createTextNode(':'), seconds);
+            return div;
+        }
+        
+        let div = document.body.firstElementChild;
+        div.replaceWith(showTime(new Date()));
+
+    </script>
+</body>
+</html>

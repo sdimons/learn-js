@@ -3,6 +3,19 @@
         <title>List</title>
     </head>
     <body>
-        
+        <script>
+            let input = null;
+            let ul = document.createElement('ul');
+
+            do {
+                input = prompt("Введите элемент списка:");
+                if (input !== null) {
+                    let li = document.createElement('li');
+                    li.append(document.createTextNode(input));
+                    ul.append(li);
+                }
+            } while(input != null);
+            document.body.append(ul);
+        </script>
     </body>
 </html>
