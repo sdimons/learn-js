@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Размер прокрутки снизу</title>
 </head>
+
 <body>
+    <div id="elem" style="overflow-y:scroll;width:300px;height:200px;border:2px solid black">
+        текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+        текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+        текст текст текст текст текст текст
+        текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+        текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+        текст текст текст текст текст текст
+        текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+        текст текст текст текст текст текст текст текст
+    </div>
+    <button onclick="getResult()">Посмотреть результат</button>
     <script>
-    </script>
+        function getResult() {
+            let elem = document.getElementById('elem');
+            alert(`scrollTop = ${elem.scrollTop}px\n`+
+            `scrollHeight = ${elem.scrollHeight}px\n`+
+            `scrollBottom = ${elem.scrollHeight - elem.scrollTop - elem.clientHeight}px`); //scrollTop в теории неправильно нарисован
+        }
+     </script>
 </body>
+
 </html>

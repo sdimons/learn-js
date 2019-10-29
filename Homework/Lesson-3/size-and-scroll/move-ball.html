@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Перемещение мяча</title>
+    <style>
+        #field {
+            width: 200px;
+            border: 10px groove black;
+            background-color: #00FF00;
+            position: relative;
+        }
+
+        #ball {
+            position: absolute;
+        }
+    </style>
 </head>
+
 <body>
+    <div id="field">
+        <img src="https://en.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+        . . . . . . . . . . . . . . . . . . . . . .
+    </div>
+    <br>
+    <button onclick='move()'>Переместить мяч</button>
     <script>
+        function move() {
+            let ball = document.getElementById('ball');
+            let ballLeftCenter = ball.offsetWidth / 2;
+            let ballTopCenter = ball.offsetHeight / 2;
+            let field = ball.offsetParent;
+            ball.style.top  = Math.round(field.clientHeight / 2 - ballTopCenter) + 'px';
+            ball.style.left = Math.round(field.clientWidth / 2 - ballLeftCenter) + 'px';
+        }
     </script>
 </body>
+
 </html>
