@@ -62,6 +62,11 @@ https://next.plnkr.co/edit/9OLNtgmui1dLNigO?preview
 - https://learn.javascript.ru/task/stringbuffer-with-clear  
 - https://learn.javascript.ru/task/make-army  
 
+26.10.19
+- https://learn.javascript.ru/closures  
+- https://learn.javascript.ru/es-function  
+- https://learn.javascript.ru/object-methods  
+- https://learn.javascript.ru/advanced-functions  
 
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
