@@ -1,5 +1,5 @@
 //1. Хранение отметок "не прочитано"
-let el = document.getElementById("btnWeakmapWeakset1");
+el = document.getElementById("btnWeakmapWeakset1");
 el.addEventListener('click', function () {
     let messages = [
         {text: "Hello", from: "John"},

@@ -10,7 +10,7 @@ function unique(arr) {
     }
     return result;
 }
-let el = document.getElementById("btnMapSet1");
+el = document.getElementById("btnMapSet1");
 el.addEventListener('click', function () {
   let values = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
