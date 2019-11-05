@@ -68,6 +68,14 @@ https://next.plnkr.co/edit/9OLNtgmui1dLNigO?preview
 - https://learn.javascript.ru/object-methods  
 - https://learn.javascript.ru/advanced-functions  
 
+02.11.19
+- https://learn.javascript.ru/decorators  
+- https://learn.javascript.ru/classes  
+- https://learn.javascript.ru/prototype  
+- https://learn.javascript.ru/settimeout-setinterval  
+- https://learn.javascript.ru/task/debounce  
+- https://learn.javascript.ru/task/throttle  
+
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
 - babel.io транспайлер https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DYUwLgBAhg5iEF4ICZkG4BQHSQGYDtEIAKASgQD4BvAXywG0BdAOgEt8BjYAVwBMQAzmQhA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.6.2&externalPlugins=  
