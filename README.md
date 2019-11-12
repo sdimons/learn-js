@@ -76,6 +76,18 @@ fn(str) // '3a2b2c2d1a'
 - https://learn.javascript.ru/task/debounce  
 - https://learn.javascript.ru/task/throttle  
 
+06.11.19
+- https://learn.javascript.ru/prototypes  
+- https://learn.javascript.ru/classes  
+- https://learn.javascript.ru/widgets-structure  
+- Почитать про git https://git-scm.com/book/ru/v2  
+- Введение https://learn.javascript.ru/screencast/git  
+- https://learn.javascript.ru/task/clock  
+- https://learn.javascript.ru/task/slider-widget  
+- https://learn.javascript.ru/task/voter  
+- https://learn.javascript.ru/task/selectable-list-component  
+
+
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
 - babel.io транспайлер https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DYUwLgBAhg5iEF4ICZkG4BQHSQGYDtEIAKASgQD4BvAXywG0BdAOgEt8BjYAVwBMQAzmQhA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.6.2&externalPlugins=  
