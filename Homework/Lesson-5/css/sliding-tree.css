@@ -1,0 +1,12 @@
+.hide {
+    display : none;
+}
+
+.font-thick {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.font-normal {
+    font-weight: normal;
+}
