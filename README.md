@@ -87,6 +87,12 @@ fn(str) // '3a2b2c2d1a'
 - https://learn.javascript.ru/task/voter  
 - https://learn.javascript.ru/task/selectable-list-component  
 
+20.11.19
+- Разбираемся в проекте. https://github.com/NepipenkoIgor/phones250919  
+- Отобразить 1 телефон  
+- Вернуться назад 
+- Добавление удаление из корзина 
+- https://learn.javascript.ru/custom-events  
 
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
