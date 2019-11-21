@@ -1,7 +1,6 @@
 const todo = document.querySelector('.todoapp');
 
-generateTODO(todo);
-
+generateTODOExt(todo);
 
 function generateTODO(element) {
     const input = element.querySelector('.new-todo');
@@ -77,4 +76,52 @@ function updateCount(el, listContainer) {
         .filter((li) => !li.hasAttribute('hidden'));
     el.innerHTML = list.length
 }
+
+//Доп. задачи
+function changeSelectedAll(element, sw) {
+    const ul = element.querySelector('.todo-list');
+    const list = ul.querySelectorAll('li');
+    for (let li of list) {
+        const input = li.querySelector('input');
+        if (sw) {
+            input.setAttribute('checked', true);
+            li.classList.add('completed');
+        } else {
+            li.classList.remove('completed');
+            input.removeAttribute('checked');
+        }
+    }
+    const count = element.querySelector('.todo-count strong');
+    updateCount(count, ul);
+};
+
+function generateTODOExt(element) {
+    generateTODO(element);
+    const clearAll = element.querySelector('.clear-all');
+    const selectAll = element.querySelector('.select-all');
+    const clearCompleted = element.querySelector('.clear-completed');
+
+    clearAll.addEventListener('click', () => {
+        event.preventDefault();
+        changeSelectedAll(element, false);
+    });
+
+    selectAll.addEventListener('click', () => {
+        event.preventDefault();
+        changeSelectedAll(element, true);
+    });
+
+    clearCompleted.addEventListener('click', () => {
+        event.preventDefault();
+        const ul = element.querySelector('.todo-list');
+        const list = ul.querySelectorAll('li');
+        for (let li of list) {
+            if (li.classList.contains('completed')) {
+                li.setAttribute('hidden', true);
+            }
+        }
+        const count = element.querySelector('.todo-count strong');
+        updateCount(count, ul);
+    });
+} 
 

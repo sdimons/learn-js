@@ -167,7 +167,7 @@ body {
     background: #f5f5f5;
     color: #4d4d4d;
     min-width: 230px;
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -400,7 +400,7 @@ body {
 .footer {
     color: #777;
     padding: 10px 15px;
-    height: 20px;
+    height: 30px;
     text-align: center;
     border-top: 1px solid #e6e6e6;
 }
@@ -459,16 +459,18 @@ body {
     border-color: rgba(175, 47, 47, 0.2);
 }
 
-.clear-completed,
-html .clear-completed:active {
+.clear-completed, .clear-all, .select-all,
+html .clear-completed:active, html .clear-all, html .select-all {
     float: right;
     position: relative;
     line-height: 20px;
     text-decoration: none;
     cursor: pointer;
+    padding: 3px 7px;
+    font-weight: bold;
 }
 
-.clear-completed:hover {
+.clear-completed:hover, .clear-all:hover, .select-all:hover {
     text-decoration: underline;
 }
 
