@@ -94,6 +94,13 @@ fn(str) // '3a2b2c2d1a'
 - Добавление удаление из корзина 
 - https://learn.javascript.ru/custom-events  
 
+23.11.19
+- Разбор проекта попробовать повторить ( корзин/back)  
+- реализовать Search + filter  
+- https://learn.javascript.ru/promise  
+- https://learn.javascript.ru/screencast/nodejs  
+
+
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
 - babel.io транспайлер https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=DYUwLgBAhg5iEF4ICZkG4BQHSQGYDtEIAKASgQD4BvAXywG0BdAOgEt8BjYAVwBMQAzmQhA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.6.2&externalPlugins=  
