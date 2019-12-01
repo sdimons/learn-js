@@ -104,6 +104,8 @@ fn(str) // '3a2b2c2d1a'
 - https://learn.javascript.ru/async  
 - https://learn.javascript.ru/network (8,1)  
 
+30.11.19
+ -  https://learn.javascript.ru/screencast/webpack  
 
 ## Полезные ссылки
 - MDN 'use strict' https://github.com/zloirock/core-js  
